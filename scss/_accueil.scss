@@ -1,11 +1,14 @@
 body {
   background: $primary-background;
 }
+
 // ***** Header ***** //
+
 header {
   @include flex-center-column;
   .logo {
     @include flex-center-row;
+
     height: 63px;
     width: 100%;
     background-color: $secondary-background;
@@ -14,6 +17,7 @@ header {
   }
   .location {
     @include flex-center-row;
+
     gap: 17px;
     background-color: $localisation-background;
     width: 100%;
@@ -24,22 +28,78 @@ header {
   }
 }
 
+// ***** Explore Restaurants **** //
+
 .explore-restaurants {
   @include flex-center-column;
   text-align: center;
+
   gap: 15px;
+  padding: $padding-general;
   &__btn {
     background: $btn-gradient;
     border: none;
     border-radius: 25px;
-    color: $btn-font-color;
     width: 186px;
     height: 50px;
+    margin-top: 15px;
+    color: $btn-font-color;
   }
 }
 
 .site-functioning {
   background-color: $secondary-background;
+  padding: $padding-general;
+  h2 {
+    padding-left: 20px;
+  }
+  &__card-cont {
+    @include flex-center-column;
+
+    margin-top: 25px;
+    gap: 20px;
+  }
+  &__card {
+    @include flex-center-row;
+    text-align: center;
+    position: relative;
+
+    width: 100%;
+    height: 70px;
+    border-radius: 20px;
+    box-shadow: $card-shadow;
+    background-color: $primary-background;
+  }
+  &__number {
+    @include flex-center-row;
+    position: absolute;
+    left: -10px;
+
+    height: 24px;
+    width: 24px;
+    background-color: $primary-color;
+    color: $number-font;
+    border-radius: 50%;
+  }
+  &__icon {
+    color: $icon-color;
+    &--purple {
+      color: $primary-color;
+    }
+  }
+  &__icon-alignement {
+    display: flex;
+    position: absolute;
+    i {
+      position: relative;
+      left: -15px;
+    }
+  }
+}
+
+//***** Restaurants *****//
+.restaurants {
+  padding: $padding-general;
 }
 
 //***** Footer *****//

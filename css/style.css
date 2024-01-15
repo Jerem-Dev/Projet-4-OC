@@ -129,18 +129,76 @@ header .location {
   flex-direction: column;
   text-align: center;
   gap: 15px;
+  padding: 30px 20px 40px 20px;
 }
 .explore-restaurants__btn {
   background: linear-gradient(to top, #9356dc, #ff79da);
   border: none;
   border-radius: 25px;
-  color: #ffffff;
   width: 186px;
   height: 50px;
+  margin-top: 15px;
+  color: #ffffff;
 }
 
 .site-functioning {
   background-color: #ffffff;
+  padding: 30px 20px 40px 20px;
+}
+.site-functioning h2 {
+  padding-left: 20px;
+}
+.site-functioning__card-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 25px;
+  gap: 20px;
+}
+.site-functioning__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 70px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  background-color: #f6f6f6;
+}
+.site-functioning__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: absolute;
+  left: -10px;
+  height: 24px;
+  width: 24px;
+  background-color: #9356dc;
+  color: #ffffff;
+  border-radius: 50%;
+}
+.site-functioning__icon {
+  color: #7e7e7e;
+}
+.site-functioning__icon--purple {
+  color: #9356dc;
+}
+.site-functioning__icon-alignement {
+  display: flex;
+  position: absolute;
+}
+.site-functioning__icon-alignement i {
+  position: relative;
+  left: -15px;
+}
+
+.restaurants {
+  padding: 30px 20px 40px 20px;
 }
 
 footer {
@@ -156,7 +214,6 @@ footer li {
   list-style: none;
 }
 
-h1,
 h2,
 h3,
 h4,
@@ -166,11 +223,12 @@ p {
   font-family: "Roboto", Roboto, sans-serif;
 }
 
+h1 {
+  font-family: "Shrikhand", Shrikhand, sans-serif;
+  font-size: 2.5em;
+}
+
 h2 {
   font-size: 1.5em;
   font-weight: 700;
-}
-
-p {
-  font-weight: 300;
 }/*# sourceMappingURL=style.css.map */
