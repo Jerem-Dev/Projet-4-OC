@@ -11,3 +11,8 @@
   justify-content: center;
   flex-direction: row;
 }
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
