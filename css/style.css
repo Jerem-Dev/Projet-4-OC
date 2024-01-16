@@ -1,1 +1,295 @@
-/*# sourceMappingURL=style.css.map */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body {
+  background: #f6f6f6;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 63px;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+header .location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 17px;
+  background-color: #eaeaea;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.explore-restaurants {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+  padding: 30px 20px 40px 20px;
+}
+.explore-restaurants__btn {
+  background: linear-gradient(to top, #9356dc, #ff79da);
+  border: none;
+  border-radius: 25px;
+  width: 186px;
+  height: 50px;
+  margin-top: 15px;
+  color: #ffffff;
+}
+
+.site-functioning {
+  background-color: #ffffff;
+  padding: 30px 20px 40px 20px;
+}
+.site-functioning h2 {
+  padding-left: 20px;
+}
+.site-functioning__card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 25px;
+  gap: 20px;
+}
+.site-functioning__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 70px;
+  font-weight: 500;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  background-color: #f6f6f6;
+}
+.site-functioning__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: absolute;
+  left: -10px;
+  height: 24px;
+  width: 24px;
+  background-color: #9356dc;
+  color: #ffffff;
+  border-radius: 50%;
+}
+.site-functioning__icon {
+  color: #7e7e7e;
+}
+.site-functioning__icon--purple {
+  color: #9356dc;
+}
+.site-functioning__icon-alignement {
+  display: flex;
+  position: absolute;
+}
+.site-functioning__icon-alignement i {
+  position: relative;
+  left: -15px;
+}
+
+.restaurants {
+  padding: 30px 20px 40px 20px;
+}
+.restaurants__card-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 20px;
+}
+.restaurants__card {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 20px;
+  height: 250px;
+  width: 100%;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.restaurants__card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 70%;
+  border-radius: 20px 20px 0 0;
+}
+.restaurants__new-added {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  color: #008766;
+  background-color: #99e2d0;
+  padding: 5px;
+}
+.restaurants__card-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.restaurants__card-content p {
+  font-weight: 300;
+}
+.restaurants__card-heart {
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  background-color: #353535;
+  color: #ffffff;
+  padding: 30px 20px 40px 20px;
+}
+footer h3 {
+  font-family: "Shrikhand", Shrikhand, sans-serif;
+  padding-bottom: 10px;
+}
+footer ul {
+  list-style: none;
+}
+footer li {
+  margin-top: 10px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Roboto", Roboto, sans-serif;
+}
+
+h1 {
+  font-family: "Shrikhand", Shrikhand, sans-serif;
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1em;
+}/*# sourceMappingURL=style.css.map */

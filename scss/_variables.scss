@@ -1,0 +1,28 @@
+//***** Colors and gradient ***** //
+$primary-color: #9356dc;
+$secondary-color: #ff79da;
+$tertiary-color: #99e2d0;
+$primary-background: #f6f6f6;
+$secondary-background: #ffffff;
+$localisation-background: #eaeaea;
+$footer-background: #353535;
+$footer-font: #ffffff;
+$font-color-new: #008766;
+$btn-font-color: #ffffff;
+$number-font: #ffffff;
+$icon-color: #7e7e7e;
+$btn-gradient: linear-gradient(to top, $primary-color, $secondary-color);
+$icon-gradient: linear-gradient(to bottom, $primary-color, $secondary-color);
+
+//***** Shadows and border *****//
+$shadow-bottom: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+$card-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+$restaurant-card-radius: 20px;
+$restaurant-img-radius: 20px 20px 0 0;
+
+//***** Fonts *****//
+$logo-and-restaurant-title: "Shrikhand", Shrikhand, sans-serif;
+$text-font: "Roboto", Roboto, sans-serif;
+
+//***** Positioning *****//
+$padding-general: 30px 20px 40px 20px;
