@@ -253,14 +253,17 @@ header .location {
 footer {
   background-color: #353535;
   color: #ffffff;
-  padding: 15px 0 15px 15px;
+  padding: 30px 20px 40px 20px;
 }
 footer h3 {
   font-family: "Shrikhand", Shrikhand, sans-serif;
   padding-bottom: 10px;
 }
-footer li {
+footer ul {
   list-style: none;
+}
+footer li {
+  margin-top: 10px;
 }
 
 h2,
