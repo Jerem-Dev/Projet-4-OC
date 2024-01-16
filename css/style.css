@@ -146,6 +146,12 @@ header .location {
   height: 50px;
   margin-top: 15px;
   color: #ffffff;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.5s ease;
+}
+.explore-restaurants__btn:hover {
+  background: linear-gradient(to top, #a16be0, #ff93e1);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.45);
 }
 
 .site-functioning {
@@ -222,7 +228,7 @@ header .location {
   width: 100%;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
-.restaurants__card img {
+.restaurants__img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -237,17 +243,31 @@ header .location {
   background-color: #99e2d0;
   padding: 5px;
 }
-.restaurants__card-content {
-  display: flex;
-  justify-content: space-between;
+.restaurants__card-txt {
   padding: 15px;
 }
-.restaurants__card-content p {
+.restaurants__card-txt p {
   font-weight: 300;
 }
 .restaurants__card-heart {
-  display: flex;
-  align-items: center;
+  position: absolute;
+  bottom: 25px;
+  right: 15px;
+}
+.restaurants__card-heart .blank-heart {
+  display: inline;
+}
+.restaurants__card-heart .gradient-heart {
+  display: none;
+}
+.restaurants__card-checkbox {
+  display: none;
+}
+.restaurants__card-checkbox:checked ~ .blank-heart {
+  display: none;
+}
+.restaurants__card-checkbox:checked ~ .gradient-heart {
+  display: inline;
 }
 
 footer {
@@ -292,4 +312,15 @@ h3 {
 
 p {
   font-size: 1em;
+}
+
+.fa-heart {
+  font-size: 22px;
+}
+
+.gradient-heart {
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(to bottom, #9356dc, #ff79da);
 }/*# sourceMappingURL=style.css.map */
