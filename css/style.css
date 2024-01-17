@@ -136,7 +136,7 @@ header .location {
   flex-direction: column;
   text-align: center;
   gap: 15px;
-  padding: 30px 20px 50px 20px;
+  padding: 30px 20px 40px 20px;
 }
 .explore-restaurants__btn {
   background: linear-gradient(to top, #9356dc, #ff79da);
@@ -156,13 +156,10 @@ header .location {
 
 .site-functioning {
   background-color: #ffffff;
-  padding: 30px 20px 50px 20px;
-  display: flex;
-  flex-direction: column;
+  padding: 30px 20px 40px 20px;
 }
-.site-functioning__main-container {
-  width: 100%;
-  max-width: 1440px;
+.site-functioning h2 {
+  padding-left: 20px;
 }
 .site-functioning__card-container {
   display: flex;
@@ -215,13 +212,7 @@ header .location {
 }
 
 .restaurants {
-  padding: 30px 20px 50px 20px;
-  display: flex;
-  flex-direction: column;
-}
-.restaurants__main-container {
-  width: 100%;
-  max-width: 1440px;
+  padding: 30px 20px 40px 20px;
 }
 .restaurants__card-container {
   display: flex;
@@ -287,7 +278,7 @@ header .location {
 footer {
   background-color: #353535;
   color: #ffffff;
-  padding: 30px 20px 50px 20px;
+  padding: 30px 20px 40px 20px;
 }
 footer h3 {
   font-family: "Shrikhand", Shrikhand, sans-serif;
@@ -300,60 +291,6 @@ footer li {
   margin-top: 10px;
 }
 
-@media (min-width: 768px) {
-  .explore-restaurants h2 {
-    font-size: 2.2em;
-  }
-  .site-functioning {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-  }
-  .site-functioning__card {
-    width: 75%;
-  }
-  .restaurants {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-  }
-  .restaurants__card-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .restaurants__card {
-    width: 47%;
-  }
-}
-@media (min-width: 1024px) {
-  .site-functioning__card-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-  }
-  .restaurants__card-container {
-    gap: 50px;
-  }
-  footer h3 {
-    padding-bottom: 0;
-  }
-  footer .footer-container {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: 100px;
-  }
-  ul {
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-  }
-}
 h2,
 h3,
 h4,
