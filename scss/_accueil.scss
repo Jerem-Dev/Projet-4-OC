@@ -58,8 +58,10 @@ header {
 .site-functioning {
   background-color: $secondary-background;
   padding: $padding-general;
-  h2 {
-    padding-left: 20px;
+  @include flex-column;
+  &__main-container {
+    width: 100%;
+    max-width: 1440px;
   }
   &__card-container {
     @include flex-center-column;
@@ -109,6 +111,11 @@ header {
 //***** Restaurants *****//
 .restaurants {
   padding: $padding-general;
+  @include flex-column;
+  &__main-container {
+    width: 100%;
+    max-width: 1440px;
+  }
   &__card-container {
     @include flex-column;
     margin-top: 20px;
@@ -190,5 +197,55 @@ footer {
   }
   li {
     margin-top: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .explore-restaurants h2 {
+    font-size: 2.2em;
+  }
+  .site-functioning {
+    @include flex-center-row;
+    &__card {
+      width: 75%;
+    }
+  }
+  .restaurants {
+    @include flex-center-row;
+    &__card-container {
+      @include flex-row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    &__card {
+      width: 47%;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-functioning {
+    &__card-container {
+      @include flex-center-row;
+    }
+  }
+  .restaurants {
+    &__card-container {
+      gap: 50px;
+    }
+  }
+  footer {
+    h3 {
+      padding-bottom: 0;
+    }
+    .footer-container {
+      @include flex-reverse-row;
+      align-items: center;
+      gap: 100px;
+    }
+  }
+  ul {
+    @include flex-row;
+    gap: 25px;
   }
 }
