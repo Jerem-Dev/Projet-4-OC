@@ -1,5 +1,6 @@
 header {
   @include flex-center-column;
+
   .logo {
     @include flex-center-row;
 
