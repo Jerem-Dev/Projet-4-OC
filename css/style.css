@@ -98,46 +98,6 @@ body {
   background: #f6f6f6;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-header .logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  height: 63px;
-  width: 100%;
-  background-color: #ffffff;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-  z-index: 1;
-}
-header .location {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  background-color: #eaeaea;
-  width: 100%;
-  height: 50px;
-  text-align: center;
-  font-weight: 500;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-}
-header .location__btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 17px;
-  border: none;
-  background: none;
-  color: #353535;
-}
-
 .explore-restaurants {
   display: flex;
   align-items: center;
@@ -293,22 +253,6 @@ header .location__btn {
   opacity: 1;
 }
 
-footer {
-  background-color: #353535;
-  color: #ffffff;
-  padding: 30px 20px 50px 20px;
-}
-footer h3 {
-  font-family: "Shrikhand", Shrikhand, sans-serif;
-  padding-bottom: 10px;
-}
-footer ul {
-  list-style: none;
-}
-footer li {
-  margin-top: 10px;
-}
-
 @media (min-width: 768px) {
   .explore-restaurants h2 {
     font-size: 2.2em;
@@ -425,4 +369,43 @@ footer li {
     flex-direction: row;
     gap: 25px;
   }
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 63px;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+header .location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #eaeaea;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+header .location__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 17px;
+  border: none;
+  background: none;
+  color: #353535;
 }/*# sourceMappingURL=style.css.map */
