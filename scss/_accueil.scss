@@ -45,7 +45,7 @@ header {
     margin-top: 15px;
     color: $btn-font-color;
     box-shadow: $btn-shadow;
-    transition: all 0.5s ease;
+    transition: background 0.5s ease, box-shadow 0.5s ease;
     &:hover {
       background: $btn-gradient-hover;
       box-shadow: $btn-shadow-hover;
@@ -147,11 +147,18 @@ header {
     bottom: 25px;
     right: 15px;
 
-    .blank-heart {
-      display: inline;
-    }
+    .blank-heart,
     .gradient-heart {
-      display: none;
+      transition: opacity 0.5s ease;
+    }
+
+    .blank-heart {
+      position: absolute;
+      opacity: 1;
+    }
+
+    .gradient-heart {
+      opacity: 0;
     }
   }
 
@@ -159,10 +166,10 @@ header {
     display: none;
     &:checked {
       ~ .blank-heart {
-        display: none;
+        opacity: 0;
       }
       ~ .gradient-heart {
-        display: inline;
+        opacity: 1;
       }
     }
   }

@@ -147,7 +147,7 @@ header .location {
   margin-top: 15px;
   color: #ffffff;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  transition: all 0.5s ease;
+  transition: background 0.5s ease, box-shadow 0.5s ease;
 }
 .explore-restaurants__btn:hover {
   background: linear-gradient(to top, #a16be0, #ff93e1);
@@ -254,20 +254,25 @@ header .location {
   bottom: 25px;
   right: 15px;
 }
+.restaurants__card-heart .blank-heart,
+.restaurants__card-heart .gradient-heart {
+  transition: opacity 0.5s ease;
+}
 .restaurants__card-heart .blank-heart {
-  display: inline;
+  position: absolute;
+  opacity: 1;
 }
 .restaurants__card-heart .gradient-heart {
-  display: none;
+  opacity: 0;
 }
 .restaurants__card-checkbox {
   display: none;
 }
 .restaurants__card-checkbox:checked ~ .blank-heart {
-  display: none;
+  opacity: 0;
 }
 .restaurants__card-checkbox:checked ~ .gradient-heart {
-  display: inline;
+  opacity: 1;
 }
 
 footer {
