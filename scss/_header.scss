@@ -1,5 +1,6 @@
 header {
   @include flex-center-column;
+  position: relative;
 
   .logo {
     @include flex-center-row;
@@ -8,6 +9,12 @@ header {
     width: 100%;
     background-color: $secondary-background;
     box-shadow: $shadow-bottom;
+    z-index: 1;
+  }
+  .previous-arrow {
+    position: absolute;
+    top: 50%;
+    left: 15px;
     z-index: 1;
   }
   .location {
