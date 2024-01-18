@@ -106,7 +106,7 @@ button {
 
 h1 {
   font-family: "Shrikhand", Shrikhand, sans-serif;
-  font-size: 1.8em;
+  font-size: 1.7em;
 }
 
 h2 {
@@ -418,7 +418,7 @@ body {
 }
 
 .menu {
-  background-color: red;
+  background-color: #f6f6f6;
   margin-top: -50px;
   border-radius: 30px 30px 0 0;
   padding-left: 15px;
@@ -429,4 +429,65 @@ body {
   align-items: center;
   justify-content: space-between;
   padding-top: 25px;
+  margin-bottom: 25px;
+}
+.menu__category {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 35px;
+}
+.menu__category h4 {
+  margin-bottom: -10px;
+}
+.menu__underline {
+  border-top: 3px solid #99e2d0;
+  width: 40px;
+}
+.menu__card {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  background-color: #f6f6f6;
+}
+.menu__content {
+  display: flex;
+  align-items: center;
+}
+.menu__txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15px;
+  gap: 5px;
+  width: 90%;
+}
+.menu__txt h3 {
+  width: 100%;
+  font-size: 1em;
+}
+.menu__txt p {
+  font-size: 0.9em;
+}
+.menu__price {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: end;
+  width: 10%;
+  padding-right: 10px;
+  margin-left: 5px;
+}
+
+.command {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 40px;
 }/*# sourceMappingURL=style.css.map */
