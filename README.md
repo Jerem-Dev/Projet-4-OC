@@ -1,1 +1,1 @@
-Site OhMyFood!
+Site OhMyFood
