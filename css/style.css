@@ -568,6 +568,7 @@ body {
   width: 100%;
   height: 100%;
   opacity: 0;
+  cursor: pointer;
 }
 .menu__checked:checked ~ .menu__choice {
   width: 80px;
