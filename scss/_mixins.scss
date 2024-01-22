@@ -26,3 +26,9 @@
   display: flex;
   flex-direction: row-reverse;
 }
+
+@mixin text-overflow-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
