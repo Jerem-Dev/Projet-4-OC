@@ -7,6 +7,21 @@
   }
 }
 
+#starter {
+  opacity: 0;
+  animation: menu-apparition 1s 0.5s ease forwards;
+}
+
+#main {
+  opacity: 0;
+  animation: menu-apparition 1s ease 0.75s forwards;
+}
+
+#dessert {
+  opacity: 0;
+  animation: menu-apparition 1s ease 1s forwards;
+}
+
 .menu {
   background-color: $primary-background;
   margin-top: -50px;
@@ -122,6 +137,7 @@
     transition: opacity 0.25s ease;
     transition-delay: 0.15s;
   }
+
   // effet mobile
   &__checked {
     position: absolute;
@@ -141,6 +157,7 @@
       }
     }
   }
+
   //effet desktop
   .menu__card:hover {
     .menu__choice {

@@ -94,6 +94,14 @@ img {
      object-fit: cover;
 }
 
+@keyframes menu-apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 h2,
 h3,
 h4,
@@ -422,6 +430,21 @@ body {
   z-index: -1;
   width: 100%;
   height: 275px;
+}
+
+#starter {
+  opacity: 0;
+  animation: menu-apparition 1s 0.5s ease forwards;
+}
+
+#main {
+  opacity: 0;
+  animation: menu-apparition 1s ease 0.75s forwards;
+}
+
+#dessert {
+  opacity: 0;
+  animation: menu-apparition 1s ease 1s forwards;
 }
 
 .menu {
