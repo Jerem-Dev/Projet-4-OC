@@ -87,6 +87,7 @@ video {
   vertical-align: baseline;
   text-decoration: none;
   color: inherit;
+  box-sizing: border-box;
 }
 
 img {
@@ -205,7 +206,12 @@ header .previous-arrow {
   left: 15px;
   z-index: 1;
 }
-header .location {
+
+body {
+  background: #f6f6f6;
+}
+
+.location {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -217,7 +223,7 @@ header .location {
   font-weight: 500;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
-header .location__btn {
+.location__btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -226,10 +232,6 @@ header .location__btn {
   border: none;
   background: none;
   color: #353535;
-}
-
-body {
-  background: #f6f6f6;
 }
 
 .explore-restaurants {
