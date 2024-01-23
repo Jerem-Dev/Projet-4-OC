@@ -11,6 +11,11 @@ footer {
   }
   li {
     margin-top: 10px;
+    font-weight: 400;
+  }
+  li:nth-child(1),
+  li:nth-child(2) {
+    font-weight: 500;
   }
 }
 
@@ -21,12 +26,17 @@ footer {
     }
     .footer-container {
       @include flex-reverse-row;
+
       align-items: center;
       gap: 100px;
     }
   }
   ul {
     @include flex-row;
-    gap: 25px;
+
+    gap: 15px;
+  }
+  li:nth-child(2) {
+    margin-right: 30px;
   }
 }

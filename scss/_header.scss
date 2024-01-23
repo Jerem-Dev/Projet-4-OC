@@ -7,9 +7,9 @@ header {
 
     height: 63px;
     width: 100%;
+    z-index: 1;
     background-color: $secondary-background;
     box-shadow: $shadow-bottom;
-    z-index: 1;
   }
   .previous-arrow {
     position: absolute;
