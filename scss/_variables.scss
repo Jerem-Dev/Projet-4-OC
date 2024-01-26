@@ -1,4 +1,5 @@
 //***** Colors and gradient ***** //
+
 $primary-color: #9356dc;
 $secondary-color: #ff79da;
 $tertiary-color: #99e2d0;
@@ -21,6 +22,7 @@ $btn-gradient-hover: linear-gradient(
 $icon-gradient: linear-gradient(to bottom, $primary-color, $secondary-color);
 
 //***** Shadows and border *****//
+
 $shadow-bottom: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 $card-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 $btn-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
@@ -29,8 +31,10 @@ $restaurant-card-radius: 20px;
 $restaurant-img-radius: 20px 20px 0 0;
 
 //***** Fonts *****//
+
 $logo-and-restaurant-title: "Shrikhand", Shrikhand, sans-serif;
 $text-font: "Roboto", Roboto, sans-serif;
 
 //***** Positioning *****//
+
 $padding-general: 30px 20px 50px 20px;
